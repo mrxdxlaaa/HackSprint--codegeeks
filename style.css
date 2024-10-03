@@ -1,17 +1,17 @@
-/* General Styles */
 body {
-    background: linear-gradient(to bottom, #1a1a1a, #2a2a2a);
-    color: #fff;
+    background-color: #ffe4e1; /* Very light pink background color */
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
-    height: 100vh; /* Full height */
-    overflow: hidden; /* Prevent scrolling */
+    padding: 0;
 }
 
-/* Navbar Styles */
+#app {
+    text-align: center;
+    padding: 20px;
+}
+
 nav {
-    background: #333;
+    background-color: #f8f9fa; /* Light background for navigation */
     padding: 10px;
 }
 
@@ -26,76 +26,48 @@ nav li {
 }
 
 nav a {
-    color: white;
     text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
-/* Clock Styles */
 .clock {
     font-size: 48px;
-    margin: 20px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    color: #333; /* Dark text color for contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 3D effect with text shadow */
 }
 
-/* Date Styles */
 .date {
+    font-size: 24px;
+    color: #666; /* Slightly lighter text color for the date */
+}
+
+.location, .lat-long {
     font-size: 20px;
+    color: #333; /* Dark color for location */
+    margin-top: 10px; /* Space above the location */
+}
+
+input, select, button {
     margin: 10px;
-}
-
-/* Analog Clock Styles */
-.analog-clock {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border: 10px solid #ccc;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #333, #444);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-}
-
-.analog-clock:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-.analog-clock .hand {
-    position: absolute;
-    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    transform-origin: bottom center;
+    font-size: 16px;
 }
 
-.analog-clock .hour {
-    width: 6px;
-    height: 50px;
-    z-index: 1;
+button {
+    background-color: #28a745; /* Green background for button */
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.analog-clock .minute {
-    width: 4px;
-    height: 70px;
-    z-index: 0;
+button:hover {
+    background-color: #218838; /* Darker green on hover */
 }
 
-.analog-clock .second {
-    width: 2px;
-    height: 90px;
-    background: red;
-    z-index: 0;
-}
-
-/* Hidden Class */
-.hidden {
-    display: none;
+h1, h2 {
+    color: #333; /* Dark heading color */
 }

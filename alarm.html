@@ -8,30 +8,32 @@
 </head>
 <body>
     <div id="app">
-        <!-- Navbar -->
         <nav>
             <ul>
                 <li><a href="index.html">Digital Clock</a></li>
                 <li><a href="timer.html">Timer</a></li>
                 <li><a href="alarm.html">Alarm</a></li>
-                <li><a href="worldclocks.html">World Clocks</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
             </ul>
         </nav>
-
-        <!-- Alarm Section -->
-        <div id="alarm-section">
-            <h1>Alarm</h1>
-            <input type="time" id="alarmTime">
-            <button onclick="setAlarm()">Set Alarm</button>
-            <div id="alarmMessage"></div>
-            <h2>Alarm List</h2>
-            <ul id="alarmList"></ul>
+        
+        <h1>Set Alarm</h1>
+        
+        <div>
+            <input type="number" id="alarmHour" placeholder="Hour (1-12)" min="1" max="12">
+            <input type="number" id="alarmMinute" placeholder="Minute (0-59)" min="0" max="59">
+            <select id="alarmAmPm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            <button id="setAlarmBtn">Set Alarm</button>
         </div>
+        
+        <h2>Alarms:</h2>
+        <ul id="alarmList"></ul>
     </div>
 
     <audio id="buzzSound" src="buzz.mp3"></audio>
 
-    <script src="script.js"></script>
+    <script src="alarm.js"></script>
 </body>
 </html>

@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, #1a1a1a, #2a2a2a);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Navbar Styles */
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Clock Styles */
+.clock {
+    font-size: 48px;
+    margin: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Date Styles */
+.date {
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Analog Clock Styles */
+.analog-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #333, #444);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+.analog-clock:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.analog-clock .hand {
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: bottom center;
+}
+
+.analog-clock .hour {
+    width: 6px;
+    height: 50px;
+    z-index: 1;
+}
+
+.analog-clock .minute {
+    width: 4px;
+    height: 70px;
+    z-index: 0;
+}
+
+.analog-clock .second {
+    width: 2px;
+    height: 90px;
+    background: red;
+    z-index: 0;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}

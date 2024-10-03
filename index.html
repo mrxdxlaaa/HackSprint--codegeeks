@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Digital Clock</a></li>
+                <li><a href="timer.html">Timer</a></li>
+                <li><a href="alarm.html">Alarm</a></li>
+                <li><a href="worldclocks.html">World Clocks</a></li>
+            </ul>
+        </nav>
+
+        <!-- Digital Clock Section -->
+        <div id="digitalClockSection">
+            <h1>Digital Clock</h1>
+            <div id="digitalClock" class="clock"></div>
+            <div id="currentDate" class="date"></div>
+            <button onclick="toggleAnalog()">Switch to Analog Clock</button>
+        </div>
+
+        <!-- Analog Clock Section -->
+        <div id="analogClock" class="analog-clock hidden">
+            <div class="hand hour" id="hourHand"></div>
+            <div class="hand minute" id="minuteHand"></div>
+            <div class="hand second" id="secondHand"></div>
+        </div>
+    </div>
+
+    <audio id="buzzSound" src="buzz.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

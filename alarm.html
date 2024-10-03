@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Digital Clock</a></li>
+                <li><a href="timer.html">Timer</a></li>
+                <li><a href="alarm.html">Alarm</a></li>
+                <li><a href="worldclocks.html">World Clocks</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+        </nav>
+
+        <!-- Alarm Section -->
+        <div id="alarm-section">
+            <h1>Alarm</h1>
+            <input type="time" id="alarmTime">
+            <button onclick="setAlarm()">Set Alarm</button>
+            <div id="alarmMessage"></div>
+            <h2>Alarm List</h2>
+            <ul id="alarmList"></ul>
+        </div>
+    </div>
+
+    <audio id="buzzSound" src="buzz.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
